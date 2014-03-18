@@ -1,0 +1,9 @@
+* TCP Connection Tester
+  - TCPコネクションを開けるかどうかをテストします。
+  - 開けない場合は指定したメールアドレスにメールを送ります。
+
+* How To Use
+  #+BEGIN_SRC sh
+    bundle install
+    ruby monitor_tcp.rb
+  #+END_SRC

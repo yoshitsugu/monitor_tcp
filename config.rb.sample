@@ -1,0 +1,9 @@
+CONFIG = {
+  host: "www.example.com",
+  port: "1234",
+  timeout: 5, #TCPコネクションを試すタイムアウト時間(s)を設定してください。デフォルト5s
+  mail_from: "error@example.com",
+  mail_to: ["hoge@example.com", "fuga@example.com"],
+  smtp_host: "localhost",
+  smtp_port: 25
+}
