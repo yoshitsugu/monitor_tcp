@@ -17,11 +17,11 @@ class TcpTester
   end
 end
 
+logger = Logger.new(File.expand_path("log.log", File.dirname(__FILE__)))
 begin
   if CONFIG.nil?
     raise "CONFIGを設定してね" 
   end
-  logger = Logger.new(File.expand_path("log.log", File.dirname(__FILE__)))
   TcpTester.new(CONFIG[:host], CONFIG[:port], CONFIG[:timeout]).main
   logger.info "TEST OK"
 rescue => e
